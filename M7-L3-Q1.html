@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Task 1-->
+    <form action="/submit" method="POST">
+        <label for="user-email">Email:</label>
+        <input type="email" name="user-email" id="user-email" placeholder="Please enter your email" pattern="[a-zA-Z0-9._]+[a-zA-Z0-._]+@[a-zA-Z0-9._]+\.[a-zA-Z]">
+        <button type="submit">Submit</button>
+    </form>
+    <!--Task 2-->
+    <form action="/submit" method="post">
+        <label for="Number">Number:</label>
+        <input type="number" name="Number" id="Number" placeholder="Please enter a number between 1 and 99" min="1" max="99"  step="1">
+        <button type="submit">Submit</button>
+    </form>
+    <!--Task 3-->
+    <form action="/submit" method="post">
+        <label for="Date">Date:</label>
+        <input type="date" name="Date" id="Date" placeholder="Select a date" min="2000-01-01" max="2030-12-31">
+        <button type="submit">Submit</button>
+    </form>
+    <!--Task 4-->
+    <form action="/submit" method="post">
+        <label for="input-range">Satifactory Rating:</label>
+        <input type="range" name="input-range" id="input-range" placeholder="Please rate your satisfaction" min="0" max="5" step="1" value="0">
+        <button type="submit">Submit</button>
+    </form>
+    <form action="/submit" method="post">
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color" placeholder="Please select a color" value="#FFFFFF">
+        <button type="submit">Submit</button>
+    </form>
+    <label for="Programming-Language">Choose your favorite programming language</label>
+    <select name="Programming-Language" id="Programming-Language">
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">Javascript</option>
+        <option value="c++">C++</option>
+        <option value="dart">Dart</option>
+        <option value="ruby">Ruby</option>
+        <option value="swift">Swift</option>
+    </select>
+    <form>
+        <fieldset>
+            <legend>Level of Expertise</legend>
+            <input type="radio" name="level" value="beginner" id="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" name="level" value="intermediate" id="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" name="level" value="advanced" id="advanced">
+            <label for="advanced">Advanced</label>
+        </fieldset>
+    </form>
+    <form action="/submit" method="post">
+        <legend>Select your Preferred developement platform (Select all that apply)</legend>
+        <input type="checkbox" name="platform" id="web">
+        <label for="web">Web</label>
+        <input type="checkbox" name="platform" id="mobile-app">
+        <label for="mobile-app">Mobile App</label>
+        <input type="checkbox" name="platform" id="low-code">
+        <label for="low-code">Low-Code</label>
+        <input type="checkbox" name="platform" id="no-code">
+        <label for="no-code">No-Code</label>
+        <input type="checkbox" name="platform" id="desktop">
+        <label for="desktop">Desktop</label>
+    </form>
+    <div>
+        <label for="search">Search</label>
+        <input type="text" name="search" id="search" aria-label="Search">
+    </div>
+</body>
+</html>
